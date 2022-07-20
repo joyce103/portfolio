@@ -4,7 +4,7 @@ html {
  	-moz-osx-font-smoothing: grayscale;
  	font-smooth: always;
 }
-body{
+html, body{
 	overflow-x: hidden;
 	background-color: #fffad9;
 
@@ -75,9 +75,7 @@ body{
 	color: #604c3f;
 	font-weight: bold;
 }
-#about .container{
-	padding:0 25% 0 25%;
-}
+
 .img_04{
 	width: 80%;
 }
@@ -88,14 +86,15 @@ body{
 	margin-left: -15%;
 	margin-bottom: -15%;
 }
+.subtitle{
+	padding:0 25% 0 25%;
+}
 #work h4{
 	border-bottom:1.5px solid #d3c6ad;
 	color: #604c3f;
 	font-weight: bold;
 }
-#work .container{
-	padding:0 25% 0 25%;
-}
+
 .workcontent{
 	color: #FFFFFF;
 	font-size: 1rem;
@@ -232,7 +231,8 @@ footer{
 }
 #svg_ani{
 	position: absolute;
-	margin-top: -25%;
+	margin-top: -20%;
+	margin-left: 5%;
 	z-index: 6;
 }
 #svg_ani2{
@@ -256,9 +256,9 @@ footer{
   /*動畫保持在最後的樣子*/
   animation-fill-mode: forwards;
 }
-.row{
+/*.row{
 	margin-right: 0!important;
-}
+}*/
 .btn_ani{
 	animation: ani 0.5s linear infinite;
 }
@@ -271,11 +271,6 @@ footer{
 	left: 0;
 	position: fixed;
 	background-color: rgba(0,0,0,1);
-}
-
-.lds-ripple,
-.lds-ripple div {
-  box-sizing: border-box;
 }
 .lds-ripple {
   display: inline-block;
@@ -354,8 +349,11 @@ footer{
 			height: 100vh;
 		}
 		.L_text{
-			top:67%;
+			top:68%;
 			left: 0;
+		}
+		.top{
+			width: 100vw;
 		}
 		.bg_look{
 			background-image: url("");
