@@ -28,12 +28,27 @@
 	<div id="load">
 		<div class="lds-ripple"><div></div><div></div></div>
 	</div>
+	<div class="container-fluid p-0">
 		<!-- 背景圖 -->
 		<div class="banner"></div>
 		<!-- 左邊大文字 -->
-		<div class="L_text"></div>
-		<!-- 列表小圓點 -->
-		<!-- <div class="R_text"></div> -->
+		<!-- <div class="L_text"></div> -->
+		<svg class="L_text" version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+		 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+		 x="0px" y="0px" width="1000px" height="950px" viewBox="0 0 1000 950" enable-background="new 0 0 1000 950" xml:space="preserve"
+		>
+		<metadata>
+			<sfw  xmlns="&ns_sfw;">
+				<slices></slices>
+				<sliceSourceBounds  width="1007.587" height="1012.732" y="-1055.273" x="443.882" bottomLeftOrigin="true"></sliceSourceBounds>
+			</sfw>
+		</metadata>
+			<text class="" transform="matrix(0.972 0 0 1 -15.6177 129.3643)" opacity="0.8" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'Noto Sans TC'"  a:adobe-font-script="chineseTraditional" font-size="170">HELLO!</text>
+			<text class="" transform="matrix(0.972 0 0 1 -15.6177 333.3643)" opacity="0.8" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'Noto Sans TC'"  a:adobe-font-script="chineseTraditional" font-size="170">MY NAME IS</text>
+			<text class="" transform="matrix(0.9534 0 0 1 -15.6177 537.3643)" opacity="0.8" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'Noto Sans TC'"  a:adobe-font-script="chineseTraditional" font-size="170">LIANG</text>
+			<text class="" transform="matrix(0.9534 0 0 1 -15.6177 741.3643)" opacity="0.8" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'Noto Sans TC'"  a:adobe-font-script="chineseTraditional" font-size="170">TING</text>
+			<text class="" transform="matrix(0.9534 0 0 1 -15.6177 945.3643)" opacity="0.8" fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" font-family="'Noto Sans TC'"  a:adobe-font-script="chineseTraditional" font-size="170">HUANG</text>
+		</svg>
 		<!-- 上方列表 -->
 		<nav class="navbar navbar-expand-lg bg-transparents top">
 		<div class="container-fluid">
@@ -51,6 +66,7 @@
 			    </div>	
 		</div>
 		</nav>
+	</div>
 		<!-- 上方列表 -->
 	</section>
 	<!-- Banner -->
@@ -72,20 +88,16 @@
 				</div>
 			</div>
 		</div>
-		<svg version="1.1" id="svg_ani" class="pb-md-5 px-md-5 d-none d-md-block" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+		<div class="py-5 pl-5">
+			<svg version="1.1" id="svg_ani" class="pb-md-5 px-md-5 d-none d-md-block" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-			 x="0px" y="0px" width="300px" height="400px" viewBox="0 0 300 400" enable-background="new 0 0 300 400" xml:space="preserve">
-			<metadata>
-				<sfw  xmlns="&ns_sfw;">
-					<slices></slices>
-					<sliceSourceBounds  height="356.411" width="270.899" y="-714.425" x="818.362" bottomLeftOrigin="true"></sliceSourceBounds>
-				</sfw>
-			</metadata>
-			<path class="s_ani" fill="none" stroke="#E75514" stroke-width="5" stroke-miterlimit="10" d="M125.222,20
-				C67.843,63.902-71.872,244.907,77.985,265.121c28.649,3.865,99.818-11.613,98.824-52.037c-0.309-12.547-10.221-23.225-23.262-17.051
-				c-17.812,8.431-9,35.753-2.821,48.411c12.965,26.561,37.95,44.123,58.959,63.759c19.979,18.671,34.539,39.649,47.717,63.517
-				c-21.32,1.645-35.492-6.977-55.258-10.283c11.459-20.316,52.309-34.17,74.551-32.633c1.143,0.078-12.908,30.678-13.473,33.197"/>
-		</svg>
+			 x="0px" y="0px" width="300px" height="410px" viewBox="0 0 300 410" enable-background="new 0 0 300 410" xml:space="preserve">
+
+			<path class="s_ani" fill="none" stroke="#E75514" stroke-width="5" stroke-miterlimit="10" d="M87.292,2c-32,44-92,148-78,208c20,86,218,64,196,18
+				c-16-34-58,6-46,38c22,54,94,96,132,138c-16-4-34-12-50-16c16-12,36-20,52-30c2,10,2,22,0,34"/>
+			</svg>
+
+		</div>
 		
 		<!-- Time line -->
 		<div class="container">
@@ -551,14 +563,19 @@
         //loading完才執行動畫
         window.onload=function(){
             PageReady();
+            animation();
         }
-
         function PageReady()   
         {     
             if ($("#load") != null)   
             {   
-                $("#load").fadeOut(2000);
+                $("#load").fadeOut(1000);     
             }   
+        }
+        function animation(){
+        	$('.L_text>text').each(function(){
+        		$(this).addClass('start');
+        	})
         }
 
 
