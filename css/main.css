@@ -275,6 +275,11 @@ footer{
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
+.demo_btn{
+	color: gray !important;
+	border:1.5px solid gray !important;
+	text-align: center;
+}
 
 
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
@@ -400,6 +405,10 @@ footer{
 		.mask_btn{
 			padding-bottom: 3.5%;
 		}
+		.demo_btn{
+			padding: 1% 5%!important;
+		}
+
 
 }
 @keyframes appear {
