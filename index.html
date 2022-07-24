@@ -25,9 +25,9 @@
 
 	<!-- Banner -->
 	<section>
-<!-- 	<div id="load">
+	<div id="load">
 		<div class="lds-ripple"><div></div><div></div></div>
-	</div> -->
+	</div>
 	<div class="container-fluid p-0">
 		<!-- 背景圖 -->
 		<div class="banner"></div>
@@ -195,7 +195,7 @@
 							使用技術：HTML/CSS/JQuery/Bootstrap/RWD
 						</p>
 						<a href="https://joyce103.github.io/Space-design/" target="_blank">
-		        			<button class="btn demo_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">website</button></a>
+		        			<button class="btn demo_btn">website</button></a>
 					</div>
 				</div>
 			</div>
@@ -216,7 +216,7 @@
 							使用技術：HTML/CSS/JQuery
 						</p>
 						<a href="https://joyce103.github.io/Bitan/" target="_blank">
-		        			<button class="btn demo_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">website</button></a>
+		        			<button class="btn demo_btn">website</button></a>
 					</div>
 				</div>
 			</div>
@@ -235,7 +235,7 @@
 							使用技術：HTML/CSS/JQuery/Bootstrap/RWD
 						</p>
 						<a href="https://joyce103.github.io/Greaten/" target="_blank">
-		        			<button class="btn demo_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">website</button></a>
+		        			<button class="btn demo_btn">website</button></a>
 					</div>
 				</div>
 			</div>
@@ -297,6 +297,8 @@
 						<p class="text-left">
 							負責內容：遊戲構想、人物跑跳、遊戲機制、遊戲效果製作
 						</p>
+						<a href="https://joyce103.github.io/Web_Game/" target="_blank">
+		        			<button class="btn demo_btn">website</button></a>
 					</div>
 				</div>
 			</div>
@@ -317,6 +319,8 @@
 						<p class="text-left">
 							負責內容：所有程式內容
 						</p>
+						<a href="https://joyce103.github.io/Friend_Website/" target="_blank">
+		        			<button class="btn demo_btn">website</button></a>
 					</div>
 				</div>
 			</div>
@@ -341,6 +345,7 @@
 						<p class="text-left">
 							負責內容：企劃構想、時程規劃、3D動畫製作、3D建模、Arduino感應元件、感應元件程式、軟體串接、線路規劃、展場星空程式
 						</p>
+						<button class="btn demo_btn" data-bs-toggle="modal" data-bs-target="#graduate_content">Read more</button>
 					</div>
 				</div>
 			</div>
@@ -461,6 +466,54 @@
 			</div>
 		</div>
 	</section>
+
+		<!-- 光臨彈跳視窗 -->
+		<div class="modal fade" id="graduate_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">畢業製作 - 光‧臨</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="modal_img text-center">
+		      		<h4 class="py-3 py-md-5">創作動機</h4>
+		      		<p class="text-justify">
+		      			現今社會越來越繁榮，高樓大廈四起，都市成了人們口中的不夜城。燈光為人們帶來了許多便利，也讓人們在夜晚時行動更加安全，但當這些光被過度使用，甚 至是使用在不適當的地方就會產生光害，像是夜晚城市中的大樓燈光，光線散射影響到天空，我們希望藉由觸碰投影的方式，讓體驗者可以對光汙染議題更加了解，進而有更多的體會。
+		      		</p>
+		      	</div>
+		      	<div class="modal_img text-center">
+		      		<h4 class="py-3 py-md-5">互動方式</h4>
+		      		<ul class="text-justify">
+		      			<li class="pb-2">觸碰投影：三面投影的方式使體驗更有沉浸感。以體驗者觸碰牆面的動作象徵著減少光源，當體驗者觸摸投影畫面中顏色鮮艷的大樓時，大樓燈光會消失，象徵城市減少過度照明的現象以及令人眩目的光彩。</li>
+						<li class="pb-2">隨機觸碰點：三面牆總共會有60個隨機觸碰點，以光點的方式讓體驗者觸碰，當觸碰完45個光點後，就會觸發最後的星空動畫。</li>
+						<li class="pb-2">星空動畫：當光點觸碰完後，城市的畫面漸漸轉變為星空的畫面，同時在天花板上也利用led燈製作點點的繁星，使體驗者完全沉浸在被星星包圍的空間裡。</li>
+				</ul>
+		      	</div>
+		       	<div class="modal_img text-center">
+		      		<h4 class="py-3 py-md-5">裝置運作原理</h4>
+		      		<p class="text-justify">
+		      			放置銅片在牆面後方，並連接銅片與電容傳感器 (型號：TTP223)，利用電容傳感器判斷體驗者是否觸碰牆面，再從Arduino Mega板傳送訊號至電腦中的Unity引擎，由Unity判斷此處動畫特效是否播放過，若未播放過則會播放投影動畫特效，最後再串接madmapper與三台投影機作連動，投影出影像畫面。
+		      		</p>
+		      	</div>
+		       	<div class="modal_img text-center">
+		      		<h4 class="py-3 py-md-5">展場規劃</h4>
+		      		<p class="text-justify">
+		      			展場內部為長、寬、高各三公尺的立體空間，內有三台投影機及一面黑色地板及設有LED燈的天花板。投影牆為木板材質，並用淺灰色油漆上色以降低投影畫面的過度地帶。展場空間由木板以及角鋼搭建而成，半開放式空間的設計是為了減少光線進入展場影響沉浸感，體驗者能夠自由進出，並且在入口一進去處貼有互動導覽海報，以避免體驗者對互動方式感到模糊也減少人為導覽影響體驗。
+		      		</p>
+		      		<img src="img/19.jpg" class="img-fluid d-none d-md-block" width="100%">
+		      		<img src="img/19.jpg" class="img-fluid d-block d-md-none" width="100%">
+		      	</div>
+		       	<div class="modal_img text-center">
+		      		<h4 class="py-3 py-md-5">展覽側拍</h4>
+		      		<img src="img/19-1.jpg" class="img-fluid pb-2">
+		      		<img src="img/19-2.jpg" class="img-fluid pb-2">
+					<img src="img/19-3.jpg" class="img-fluid pb-2">
+		      	</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 	<!-- sweetdreams彈跳視窗 -->
 		<div class="modal fade" id="s_content" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -637,25 +690,29 @@
 	 			btnclick=0;
 	 			img_05.classList.remove('img_ani');
 	 			description.classList.remove('description_ani');
-	 			console.log(btnclick);
+	 			// console.log(btnclick);
 	 		}else{
 	 			$('.description').css("display", "block");
 	 			$('.des_content').css("display", "block");
 	 			btnclick=1;
 	 			img_05.classList.add('img_ani');
 	 			description.classList.add('description_ani');
-	 			console.log(btnclick);
+	 			// console.log(btnclick);
 	 			$('.btn').removeClass("btn_ani");
 	 		}
 	 	})
 
 	 	const s_Modal = document.getElementById('s_content');
 		s_Modal.addEventListener('show.bs.modal', event => {
-			console.log("sweet");
+			// console.log("sweet");
 		})
 		const i_Modal = document.getElementById('i_content');
 		i_Modal.addEventListener('show.bs.modal', event => {
-			console.log("iHMOE");
+			// console.log("iHMOE");
+		})
+		const g_Modal = document.getElementById('graduate_content');
+		g_Modal.addEventListener('show.bs.modal', event => {
+			// console.log("graduate");
 		})
 
 

@@ -4,7 +4,7 @@ html {
  	-moz-osx-font-smoothing: grayscale;
  	font-smooth: always;
 }
-html, body{
+body{
 	overflow-x: hidden;
 	background-color: #fffad9;
 
@@ -275,6 +275,7 @@ footer{
 .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
 }
+
 .demo_btn{
 	color: gray !important;
 	border:1.5px solid gray !important;
@@ -283,6 +284,10 @@ footer{
 
 
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
+	 	html,body{
+			overflow-x: hidden;
+
+		}
 		#about h4{
 			border-bottom:1px solid #d3c6ad;
 		}
@@ -334,6 +339,10 @@ footer{
 		}
 }
 @media only screen and (max-width:720px){
+	 	html,body{
+			overflow-x: hidden;
+
+		}
 		#load{
 			width: 100%;
 		}
