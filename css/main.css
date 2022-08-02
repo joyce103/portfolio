@@ -7,7 +7,16 @@ html {
 body{
 	overflow-x: hidden;
 	background-color: #fffad9;
-
+}
+#about{
+	width: 100%;
+	position: relative;
+}
+.img_design{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
 }
 .banner{
 	width: 100%;
@@ -53,6 +62,7 @@ body{
 	background-repeat:no-repeat;
 	background-position:center center;
 }
+
 #about h4{
 	border-bottom:1.5px solid #d3c6ad;
 	color: #604c3f;
@@ -72,6 +82,7 @@ body{
 .subtitle{
 	padding:0 25% 0 25%;
 }
+
 #work h4{
 	border-bottom:1.5px solid #d3c6ad;
 	color: #604c3f;
@@ -217,7 +228,7 @@ footer{
 	position: absolute;
 	margin-top: -20%;
 	margin-left: 5%;
-	z-index: 5;
+	z-index: -1;
 }
 #svg_ani2{
 	position: absolute;
@@ -245,6 +256,11 @@ footer{
 }*/
 .btn_ani{
 	animation: ani 0.5s linear infinite;
+}
+.demo_btn{
+	color: gray !important;
+	border:1.5px solid gray !important;
+	text-align: center;
 }
 /*lazyloading*/
 #load{
@@ -276,11 +292,7 @@ footer{
   animation-delay: -0.5s;
 }
 
-.demo_btn{
-	color: gray !important;
-	border:1.5px solid gray !important;
-	text-align: center;
-}
+
 
 
 @media only screen and (min-width: 720px) and (max-width: 1024px) {

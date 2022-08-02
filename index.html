@@ -66,6 +66,7 @@
 			    </div>	
 		</div>
 		</nav>
+
 	</div>
 		<!-- 上方列表 -->
 	</section>
@@ -73,6 +74,7 @@
 
 	<!-- 關於我 -->
 	<section class="pt-5 pb-md-5 pb-sm-3" id="about">
+		<img src="img/20.png" class="img-fluid img_design">
 		<div class="container">
 			<div class="subtitle">
 			<h4 class="pb-md-2 text-center">關於我</h4>
@@ -88,6 +90,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="py-5 pl-5">
 			<svg version="1.1" id="svg_ani" class="pb-md-5 px-md-5 d-none d-md-block" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -628,9 +631,14 @@
 	 	var btnclick=0;
 	 	var img_05 = document.querySelector('.img_05');
 	 	var description = document.querySelector('.description');
+	 	
 
+	 	$(document).ready(function(){
+	 		$('body').css('overflow-y','hidden');
+	 	})
         //loading完才執行動畫
         window.onload=function(){
+        	$('body').css('overflow-y','');
             PageReady();
             animation();
         }
