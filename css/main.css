@@ -66,7 +66,7 @@ main {
   animation-fill-mode: forwards;
 }
 
-.bg_look{
+/* .bg_look{
 	background-image: url("../img/03.png");
 	-moz-background-size:cover;
 	-webkit-background-size:cover;
@@ -74,7 +74,7 @@ main {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center center;
-}
+} */
 
 #about h4{
 	border-bottom:1.5px solid #d3c6ad;
@@ -84,6 +84,29 @@ main {
 
 .img_04{
 	width: 80%;
+}
+.nav-link {
+	position: relative;
+	z-index: 999;
+}
+.nav-link::before {
+	position: absolute;
+	content: '';
+	width: 40px;
+	height: 30px;
+	background-color: #fee97d;
+	border-radius: 50%;
+	opacity: 0.5;
+	top: 50%;
+	right: -20%;
+	transform: translateY(-50%);
+	z-index: -1;
+	transition: 0.5s;
+}
+.nav-link:hover::before {
+	background-color: #ffe359;
+	width: 100%;
+	right: 0;
 }
 .content{
 	color: #FFFFFF;
@@ -249,7 +272,7 @@ footer p {
 #svg_ani2{
 	position: absolute;
 	margin-top: -5%;
-	right:10%;
+	right: 0;
 	transform:translate(0,-20%); 
 	z-index: 6;
 }
@@ -316,6 +339,28 @@ footer p {
 			overflow-x: hidden;
 
 		}
+		.nav-link {
+			text-align: center;
+		}
+		.nav-link::before {
+			position: absolute;
+			content: '';
+			width: 40px;
+			height: 30px;
+			background-color: #fee97d;
+			border-radius: 50%;
+			opacity: 0.5;
+			top: 50%;
+			left: 52%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			transition: 0.5s;
+		}
+		.nav-link:hover::before {
+			background-color: #ffe359;
+			width: 50px;
+			left: 50%;
+		}
 		#about h4{
 			border-bottom:1px solid #d3c6ad;
 		}
@@ -328,9 +373,6 @@ footer p {
 		.L_text{
 			width: 37vw;
 			top: -29vw;
-		}
-		.bg_look{
-			background-image: url("");
 		}
 		.img_04{
 			width: 100%;
@@ -371,6 +413,26 @@ footer p {
 			overflow-x: hidden;
 
 		}
+		.nav-link::before {
+			position: absolute;
+			content: '';
+			width: 40px;
+			height: 30px;
+			background-color: #fee97d;
+			border-radius: 50%;
+			opacity: 0.5;
+			top: 50%;
+			right: 0;
+			left: 3%;
+			transform: translateY(-50%);
+			z-index: -1;
+			transition: 0.5s;
+		}
+		.nav-link:hover::before {
+			background-color: #ffe359;
+			width: 50px;
+			left: 0;
+		}
 		#load{
 			width: 100%;
 		}
@@ -383,9 +445,6 @@ footer p {
 		}
 		.top{
 			width: 100vw;
-		}
-		.bg_look{
-			background-image: url("");
 		}
 		#about h4{
 			border-bottom:1px solid #d3c6ad;
