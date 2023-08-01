@@ -3963,7 +3963,7 @@ input[type=button].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -4156,8 +4156,9 @@ input[type=button].btn-block {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    border: none;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
   }
   .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid,
